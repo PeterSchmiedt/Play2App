@@ -1,6 +1,8 @@
-@(projects: List[Project], todoTasks: List[Task])
+@(projects: List[Project], todoTasks: List[Task], user: User)
 
-    @main(projects) {
+@import java.util.List
+
+    @main(projects, user) {
 
         <header>
             <hgroup>
